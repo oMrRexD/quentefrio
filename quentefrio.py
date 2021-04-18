@@ -1,8 +1,8 @@
-from os import system
+from os import system, name
 from random import randint
 
 def game():
-    system('clear')
+    clear()
     print('''*******************************
              Bem-vindo(a) ao jogo Quente e Frio!
                               Created by: Victor Mateus
@@ -48,7 +48,7 @@ def getTrying(dif):
         return 5
 
 def match(trying, randomNumber):
-    system('clear')
+    clear()
     print("Beleza, foi sorteado um número aleatório de 1 a 100, agora tente adivinhar o número!")
     attempt = trying
     while attempt != 0:
@@ -64,35 +64,57 @@ def match(trying, randomNumber):
             print(hotorcold(result, randomNumber))
             attempt = attempt - 1
         if attempt == 0:
-            system('clear')
+            clear()
             print("*********GAME OVER*********")
             print("\nO numero escolhido era:", randomNumber, "\n")
             break
+    again()
 
 def getPlayerNumber():
     try:
-         number = int(input(":"));
+         number = int(input(":"))
     except:
-         print('Digite um número!');
+         print('Digite um número!')
          number = None
     return number
 
 def hotorcold(result, randomNumber):
     calc = result - randomNumber
     if numberCondition(calc, 90, 60):
-        return "Tá frio demais"
+        return "Tá frio demais (muito longe)"
     if numberCondition(calc, 60, 40):
-        return "Tá frio"
+        return "Tá frio (longe)"
     if numberCondition(calc, 40, 20):
-        return "Tá morno"
+        return "Tá morno (próximo)"
     if numberCondition(calc, 20, 10):
-        return "Tá bem morno"
+        return "Tá bem morno (bem próximo)"
     if numberCondition(calc, 10, 5):
-        return "Tá ficando quente demais"
+        return "Tá ficando quente (perto)"
     if numberCondition(calc, 5, 1):
-        return "Tá pelandoo"
+        return "Tá pelandoo (muito perto)"
     if numberCondition(calc, 1, 0):
-        return "Tá pegando fogo"
+        return "Tá pegando fogo bixo soccoro (COLADO)"
 
 def numberCondition(var, conditionOne, conditionTwo):
     return var >= conditionOne or var >= -float('inf') and var <= -conditionTwo
+
+def again():
+    print('''============================
+Você deseja jogar novamente?
+
+Digite Y para sim
+Digite N para não
+============================''')
+    userInput = input("input:").lower()
+    while userInput != "y" and userInput != "n":
+        print("Digite um argumento correto!")
+        userInput = input("input:").lower()
+    if userInput == "y":
+        start(game())
+    if userInput == "n":
+        exit()
+
+def clear():
+    system('cls' if name=='nt' else 'clear')
+
+start(game())
