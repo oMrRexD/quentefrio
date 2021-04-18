@@ -12,10 +12,12 @@ Pode ser que o código esteja bem confuso, pois eu literalmente acabei de começ
 $ git clone https://github.com/oMrRexD/frioquente.git
 ```
 
-- Por fim, inicie o minigame :)
+- E inicia o minigame :)
 ```sh
 $ python3 start.py
 ```
+
+> Nota: o minigame foi criado pensado no Linux, então se você é um usuário Windows, recomendo abrir no PowerShell, pois pode ter falta de compatibilidade com o CMD padrão.
 
 #### Fair Use:
 - Fica livre o uso desse software bem como modificações no mesmo e etc etc...
