@@ -12,7 +12,7 @@ Pode ser que o código esteja bem confuso, pois eu literalmente acabei de começ
 $ git clone https://github.com/oMrRexD/frioquente.git
 ```
 
-- E inicia o minigame :)
+- Por fim, inicie o minigame :)
 ```sh
 $ python3 start.py
 ```
