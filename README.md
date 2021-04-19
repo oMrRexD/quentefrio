@@ -1,11 +1,11 @@
 # Quente e Frio!
 
 Um minigame que eu desenvolvi em Python para testar o meu aprendizado atual com a linguagem.
-Pode ser que o código esteja bem confuso, pois eu literalmente acabei de começar a estudar Python, tipo, começei a fazer o curso ontem kk
+Pode ser que o código esteja bem confuso, pois eu literalmente acabei de começar a estudar Python, então eu ainda não manjo muito sobre separação, organização etc...
 
 ## Como usar:
 
-- Primeiro é necessário ter o [Python3](https://www.python.org/downloads/) instalado (Óbivio)
+- Primeiro é necessário ter o [Python3](https://www.python.org/downloads/) instalado (Óbvio)
 
 - Depois você clona o repositório:
 ```sh
