@@ -18,4 +18,4 @@ $ python3 quentefrio.py
 ```
 
 #### Fair Use:
-- Fica livre o uso desse software bem como modificações no mesmo e etc etc...
+- Fica livre o uso desse software bem como modificações no mesmo e etc etc... (mentira, tem nada disso não)

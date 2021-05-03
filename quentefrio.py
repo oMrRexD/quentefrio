@@ -56,6 +56,7 @@ def match(trying, randomNumber):
             print("* Restam apenas", attempt, "tentativas restantes!")
         result = getPlayerNumber()
         if result == randomNumber:
+            clear()
             print("*********VOCÊ GANHOU!!!*********")
             print("O numero escolhido era:", randomNumber)
             print("\nVocê teve que chutar", trying - attempt + 1, "vezes para achar o número correto, parabéns!\n")
@@ -117,4 +118,5 @@ Digite N para não
 def clear():
     system('cls' if name=='nt' else 'clear')
 
-start(game())
+if __name__ == '__main__':
+    start(game())
